@@ -12,33 +12,22 @@ public class BubbleSortWithLogging {
             
             for (int j = 0; j < n - i - 1; j++) {
                 if (array[j] > array[j + 1]) {
-                    // Обмен значениями
                     int temp = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
-                    
-                    swapped = true;
-                }
-            }
-            
-            // Запись текущего состояния массива в лог-файл
+                    swapped = true;}}
             writeArrayToLog(array);
-            
-            // Если внутренний цикл не произвел ни одной перестановки, значит массив уже отсортирован
             if (!swapped) {
                 break;
             }
         }
     }
-
     public static void main(String[] args) {
         int[] array = {5, 2, 10, 8, 1};
         
         System.out.println("Массив до сортировки:");
         printArray(array);
-        
         bubbleSort(array);
-        
         System.out.println("Массив после сортировки:");
         printArray(array);
     }
