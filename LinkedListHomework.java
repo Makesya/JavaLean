@@ -1,3 +1,6 @@
+// Ф.И.      - Усов максим
+// № Группы  - Пока не нашёл где взять :( 
+
 import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Scanner;
