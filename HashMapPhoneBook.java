@@ -1,6 +1,4 @@
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
@@ -80,6 +78,7 @@ public class HashMapPhoneBook {
         } else {
             for (Map.Entry<String, LinkedList<Integer>> contact : phoneBook.entrySet()) {
                 System.out.printf("%s: %s\n", contact.getKey(), contact.getValue().toString());}
+
             Scanner scanner = new Scanner(System.in);
             System.out.println("Нажмите для продолжения..");
             scanner.nextLine();
