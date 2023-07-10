@@ -1,9 +1,9 @@
 //Усов Максим
 
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 import java.util.Scanner;
-import java.util.TreeMap;
 
 public class HashMapPhoneBook {
     public static void main(String[] args) throws InterruptedException {
@@ -12,7 +12,7 @@ public class HashMapPhoneBook {
     public static void phoneDatabase() throws InterruptedException{
         
         try {
-            Map<String,LinkedList<Integer>> phoneBook = new TreeMap<>();
+            Map<String,LinkedList<Integer>> phoneBook = new HashMap<>();
 
         do {
             clear();
