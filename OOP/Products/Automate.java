@@ -1,9 +1,11 @@
 package OOP.Products;
 
+import OOP.Abstracts.Order;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class Automat {
+public class Automate {
 
   List<Product> listProduct = new ArrayList<>();
 
@@ -19,6 +21,11 @@ public class Automat {
     }
     return null;
 
+  }
+
+  public Order createOrder(List<String> mylist){
+
+    return null;
   }
 
 }

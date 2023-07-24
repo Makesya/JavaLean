@@ -3,7 +3,7 @@ package OOP.Products;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AutomatHotBevearage extends Automat{
+public class AutomatHotBevearage extends Automate {
     List<HotBeverage> listProduct = new ArrayList<>();
 
     public void initHotBeverage(List<HotBeverage> myList) {
