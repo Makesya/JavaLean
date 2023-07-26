@@ -1,8 +1,5 @@
 package OOP.Products;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.GregorianCalendar;
-import java.util.List;
+import java.util.*;
 
 public class Program {
 
@@ -42,6 +39,10 @@ public class Program {
     System.out.println(xlist.getProduct("BlackTea").toString());
     System.out.println(xlist.getProduct("Coffee").toString());
     System.out.println(xlist.getProduct("Water").toString());
+
+
+    mList.sort(new QuantityComparator());
+    myList.sort(new PriceComparator());
 
   }
 }

@@ -2,7 +2,7 @@ package OOP.Products;
 
 import java.util.Calendar;
 
-public abstract class Product {
+public abstract class Product implements Comparable<Product>{
 
   private String name;
   private int price;
@@ -31,4 +31,8 @@ public abstract class Product {
         + bestBefore.get(Calendar.YEAR) + "/" + bestBefore.get(Calendar.MONTH);
   }
 
+  @Override
+  public int compareTo(Product o) {
+    return Integer.compare(this.quantity, o.quantity);
+  }
 }

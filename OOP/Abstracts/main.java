@@ -2,6 +2,7 @@ package OOP.Abstracts;
 
 import OOP.Products.Food;
 import OOP.Products.HotBeverage;
+import OOP.Products.PriceComparator;
 import OOP.Products.Product;
 
 import java.util.ArrayList;
@@ -19,6 +20,9 @@ public class main {
 
         Human Gregor = new Human("Gregor", true, false, 1000);
         Gregor.createOrder(shopList);
+
+        //############################################
+        shopList.sort(new PriceComparator());
 
 
     }
