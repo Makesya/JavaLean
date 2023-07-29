@@ -1,0 +1,49 @@
+package OOP.StandartInterface;
+
+public abstract class User {
+    private int id;
+    private String firstName;
+    private String lastName;
+    //*******************************
+
+
+    public User(int id, String firstName, String lastName) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public abstract int compareTo(Student o);
+
+    @Override
+    public String toString() {
+        return "ID: " + id + " firstName: " + firstName + " lastName: " + lastName + " ";
+    }
+
+    //======== Override ========
+    public abstract int compareTo(Teacher o);
+}

@@ -5,7 +5,7 @@ import OOP.Abstracts.Order;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Automate {
+public class Automate implements AutoInterface{
 
   List<Product> listProduct = new ArrayList<>();
 
@@ -28,4 +28,13 @@ public class Automate {
     return null;
   }
 
+  @Override
+  public void addProduct(Product product) {
+    this.listProduct.add(product);
+  }
+
+  @Override
+  public String toString() {
+    return "Automate: "  + listProduct;
+  }
 }

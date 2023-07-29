@@ -6,23 +6,34 @@ import OOP.Products.Product;
 import java.util.*;
 
 public class Order{
-    private ArrayList <Product> list;
+    private ArrayList <Product> list = new ArrayList<>();
     private Human man;
+    private int cost;
 
-    @Override
-    public String toString() {
-        StringBuilder ls = null;
-        for (Product product:list){
-            ls.append(product.getName() + " : " + product.getPrice() + "\n");
-        }
+    public ArrayList<Product> getList() {
+        return list;
+    }
 
-        return String.format("Покупатель: %s\nКупил:\n%s", man, ls);
-        }
+    public void setList(ArrayList<Product> list) {
+        this.list = list;
+    }
 
+    public Human getMan() {
+        return man;
+    }
 
+    public void setMan(Human man) {
+        this.man = man;
+    }
 
+    public int getCost() {
+        return cost;
+    }
 
-        //########################################################
+    public void setCost(int cost) {
+        this.cost = cost;
+    }
+//########################################################
 
         void validateOrder(){
             HashMap<String, Integer> prod = new HashMap<>();
@@ -36,12 +47,11 @@ public class Order{
                 String prodName = list.get(i).getName();
                 if (prod.get(prodName) > list.get(i).getQuantity()){
                     int finalI = i;
-                    prod.computeIfPresent(prodName, (k, v) -> v=list.get(finalI).getQuantity());
-                }
-            }
-        };
+                    prod.computeIfPresent(prodName, (k, v) -> v=list.get(finalI).getQuantity());}} };
 
-
-
+    @Override
+    public String toString() {
+        return String.format("ShopList: " + list) + "\nTotal purchase price: " + cost;
     }
+}
 

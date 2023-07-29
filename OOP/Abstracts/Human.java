@@ -71,7 +71,10 @@ public class Human extends Actor {
                 price += product.getPrice();
             }
         }
-        return new Order();
+        Order order = new Order();
+        order.setCost(price);
+        order.setMan(this);
+        order.setList((ArrayList<Product>) finalList);
+        return order;
     }
-
 }

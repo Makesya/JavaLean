@@ -3,7 +3,8 @@ package OOP.Products;
 import java.util.Calendar;
 
 public abstract class Product implements Comparable<Product>{
-
+  private static int counter = 0;
+  private final int count;
   private String name;
   private int price;
   private int quantity;
@@ -14,6 +15,8 @@ public abstract class Product implements Comparable<Product>{
     this.price = price;
     this.quantity = quantity;
     this.bestBefore = bestBefore;
+    counter++;
+    count=counter;
   }
 
   public String getName() {return name;}
@@ -27,7 +30,7 @@ public abstract class Product implements Comparable<Product>{
 
   @Override
   public String toString() {
-    return "Name: " + name + ", Price: " + price + ", Quantity: " + quantity + ", BestBefore: "
+    return  "\n" + "[" + count +"] "+ "Name: " + name + ", Price: " + price + ", Quantity: " + quantity + ", BestBefore: "
         + bestBefore.get(Calendar.YEAR) + "/" + bestBefore.get(Calendar.MONTH);
   }
 

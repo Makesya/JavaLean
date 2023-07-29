@@ -1,24 +1,34 @@
 package OOP.StandartInterface;
 
-public class Student {
-    private int id;
-    private String name;
+public class Student extends User {
+    private final int meanBall;
 
-    public Student(String name, int id){
-        this.name = name;
-        this.id = id;
+    //====== Constructor =========
+
+    public Student(int id, String firstName, String lastName, int meanBall) {
+        super(id, firstName, lastName);
+        this.meanBall = meanBall;
     }
 
-    //Getters and Setters ======================
-    public String getName() {return name;}
-    public int getId() { return id;}
-    public void setName(String name) {this.name = name;}
-    public void setId(int id) {this.id = id;}
-    //==========================================
+    //======= Getters and Setters =======
 
+    public int getMeanBall() {
+        return meanBall;
+    }
+    //======= Override =======
 
     @Override
     public String toString() {
-        return String.format("ID: %d - %s", id, name);
+        return super.toString() + " meanBall " + meanBall;
+    }
+
+    @Override
+    public int compareTo(Teacher o) {
+        return 0;
+    }
+
+    @Override
+    public int compareTo(Student o){
+        return (int)(this.getMeanBall()-o.meanBall);
     }
 }

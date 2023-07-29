@@ -1,9 +1,6 @@
 package OOP.Abstracts;
 
-import OOP.Products.Food;
-import OOP.Products.HotBeverage;
-import OOP.Products.PriceComparator;
-import OOP.Products.Product;
+import OOP.Products.*;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -16,13 +13,16 @@ public class main {
         List<Product> shopList = new ArrayList<>();
         shopList.add(new Food("Twix", 80, 10, new GregorianCalendar(2023, Calendar.NOVEMBER, 10, 0, 0), 234));
         shopList.add(new HotBeverage("Coffee", 125, 17, new GregorianCalendar(2023, Calendar.NOVEMBER, 0, 0, 0), 0.7, 36));
+        shopList.add(new Beverage("Bon-aqua", 74, 18, new GregorianCalendar(2023, Calendar.NOVEMBER, 0, 0, 0), 500));
+        shopList.add(new HotBeverage("BlackTea", 77, 25, new GregorianCalendar(2023, Calendar.NOVEMBER, 0, 0, 0), 1.5, 32));
+        shopList.add(new HotBeverage("Coffee", 125, 17, new GregorianCalendar(2023, Calendar.NOVEMBER, 0, 0, 0), 0.5, 36));
+        shopList.add(new Food("Bread", 90, 50, new GregorianCalendar(2023, Calendar.NOVEMBER, 10, 0, 0), 252));
 
 
         Human Gregor = new Human("Gregor", true, false, 1000);
-        Gregor.createOrder(shopList);
 
-        //############################################
-        shopList.sort(new PriceComparator());
+
+        System.out.println(Gregor.createOrder(shopList));
 
 
     }
