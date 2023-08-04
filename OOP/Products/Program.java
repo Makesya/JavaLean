@@ -31,7 +31,10 @@ public class Program {
     System.out.println(productList);
     //myList.sort(new PriceComparator());
     System.out.println("\n======= Added BOUNTY ======= \n");
+
+    // ################# ADD PRODUCT ################# ################# ################# ################# #################
     productList.addProduct(new Food("Bounty", 125, 15, new GregorianCalendar(2023, Calendar.NOVEMBER, 10, 0, 0), 123));
+
     System.out.println(productList);
   }
 }
