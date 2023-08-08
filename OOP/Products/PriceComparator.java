@@ -1,7 +1,8 @@
 package OOP.Products;
-
+/*
+ Нарушений принципов SOLID не обнаружил
+*/
 import java.util.Comparator;
-
 public class PriceComparator implements Comparator<Product> {
 
     @Override

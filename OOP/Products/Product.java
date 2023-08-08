@@ -1,7 +1,9 @@
 package OOP.Products;
-
+/*
+ Нарушений принципов SOLID не обнаружил
+ Класс Product и методы в нем отвечаю только за продукты
+*/
 import java.util.Calendar;
-
 public abstract class Product implements Comparable<Product>{
   private static int counter = 0;
   private final int count;

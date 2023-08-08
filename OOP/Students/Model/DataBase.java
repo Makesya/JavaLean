@@ -6,8 +6,8 @@ public class DataBase {
     ArrayList<Student> dataStudents = new ArrayList<>();
 
     public DataBase(){
-        this.dataTeachers = new ArrayList<Teacher>();;
-        this.dataStudents = new ArrayList<Student>();;
+        this.dataTeachers = new ArrayList<Teacher>();
+        this.dataStudents = new ArrayList<Student>();
     }
 
     public DataBase(ArrayList<Teacher> dataTeachers, ArrayList<Student> dataStudents) {

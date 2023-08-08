@@ -1,5 +1,7 @@
 package OOP.Products;
-
+/*
+ Нарушений принципов SOLID не обнаружил
+*/
 import java.util.Calendar;
 
 public class Food extends Product {
