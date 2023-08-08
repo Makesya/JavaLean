@@ -1,6 +1,5 @@
-package OOP.UsersInterface.Model.Data;
-
-import java.util.Calendar;
+package OOP.Students.Model;
+import java.util.GregorianCalendar;
 
 public class Student extends User {
     private String group;
@@ -8,12 +7,16 @@ public class Student extends User {
     private double middleBall;
     private static int studentId = 0;
 
-    public Student(String firstName, String lastName, Calendar birthDay, String group, String specialization, double middleBall) {
+    public Student(String firstName, String lastName, GregorianCalendar birthDay, String group, String specialization, double middleBall) {
         super(firstName, lastName, birthDay);
         this.group = group;
         this.specialization = specialization;
         this.middleBall = middleBall;
         studentId++;
+    }
+
+    public Student(String firstName, String lastName, GregorianCalendar birthDay) {
+        super(firstName, lastName, birthDay);
     }
 
     public String getGroup() {
@@ -38,7 +41,8 @@ public class Student extends User {
 
     @Override
     public String toString() {
-        return String.format("Студент: Имя: %s\nФамилия: %s\nГруппа: %s\nСредний балл: %f",
+        return String.format("Студент: Имя: %s\nФамилия: %s\nГруппа: %s\nСредний балл: %f\n\n",
                 getFirstName(), getLastName(), getGroup(), getMiddleBall());
     }
 }
+

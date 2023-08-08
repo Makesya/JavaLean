@@ -1,17 +1,20 @@
-package OOP.UsersInterface.Model.Data;
+package OOP.Students.Model;
 
 import java.util.Calendar;
+import java.util.GregorianCalendar;
 
 public abstract class User {
-    private String firstName;
-    private String lastName;
-    private Calendar birthDay;
+    private final String firstName;
+    private final String lastName;
+    private final Calendar birthDay;
 
-    public User(String firstName, String lastName, Calendar birthDay) {
+    public User(String firstName, String lastName, GregorianCalendar birthDay) {
+
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDay = birthDay;
     }
+
 
 
     public String getFirstName() {
@@ -25,5 +28,4 @@ public abstract class User {
     public Calendar getBirthDay() {
         return birthDay;
     }
-
 }
