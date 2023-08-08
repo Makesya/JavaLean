@@ -59,7 +59,7 @@ public class Human extends Actor {
 
     public double getMoney() {
         return money;}
-    public double setMoney(int value) {
+    public double setMoney(int value){
         return this.money = value;}
 
     public Order createOrder (List<Product> cartList){
