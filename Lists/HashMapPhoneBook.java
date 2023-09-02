@@ -1,4 +1,4 @@
-//Усов Максим
+package Lists;//Усов Максим
 
 import java.util.HashMap;
 import java.util.LinkedList;
