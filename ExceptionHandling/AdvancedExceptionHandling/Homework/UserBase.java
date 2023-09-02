@@ -95,8 +95,8 @@ public class UserBase extends CheckData {
 
         } catch (IOException e) {
             throw new RuntimeException(e);
-        } catch (NullPointerException e) {
-            System.out.println("||| " + e.getMessage());
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 
