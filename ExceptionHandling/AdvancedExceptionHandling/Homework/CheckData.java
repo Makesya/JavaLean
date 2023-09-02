@@ -5,9 +5,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class CheckData {
-    public CheckData() {
-    }
-
 
     public String checkName(String nameData) {
         char[] data = nameData.toLowerCase().toCharArray();

@@ -8,8 +8,6 @@ public class Main {
 //        generateBase(25);
 //        userBase.add();
         userBase.add("ктулху александр иванович 07.07.1999 89991113232 m");
-
-
     }
 
     public static void generateBase(int count) {
