@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-public class LeanHashMap {
+public class OneLinkedList {
     public static void main(String[] args) {
         sortLenghtOptimized();
     }
