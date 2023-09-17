@@ -9,7 +9,7 @@ public class Main {
 //        toyShop.addToy(2, "Lego Set", 5, 20);
 //        toyShop.addToy(3, "Doll", 8, 25);
         for (int i = 0; i < 25; i++) {
-            toyShop.addToy(i, "Toy #" + i, 25, new Random().nextInt(20, 40));
+            toyShop.addToy(i, "Toy #" + i, 25, new Random().nextInt(10, 90));
         }
 
         for (int i = 0; i < 10; i++) {
