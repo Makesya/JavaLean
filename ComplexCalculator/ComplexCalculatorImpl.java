@@ -6,13 +6,13 @@ import java.util.logging.SimpleFormatter;
 import java.util.logging.Level;
 
 public class ComplexCalculatorImpl implements ComplexCalculator {
-    private Logger logger;
+    private final Logger logger;
 
     public ComplexCalculatorImpl() {
         // Настроим логирование
         logger = Logger.getLogger("ComplexCalculator");
         try {
-            FileHandler fileHandler = new FileHandler("ComplexCalculator/log.txt");
+            FileHandler fileHandler = new FileHandler("ComplexCalculator/log.txt", true);
             SimpleFormatter formatter = new SimpleFormatter();
             fileHandler.setFormatter(formatter);
             logger.addHandler(fileHandler);

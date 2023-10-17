@@ -1,6 +1,6 @@
-окт. 17, 2023 8:40:54 PM ComplexCalculator.ComplexCalculatorImpl add
+окт. 17, 2023 8:46:47 PM ComplexCalculator.ComplexCalculatorImpl add
 INFO: Addition: 3.0 + 4.0i + 1.0 + 2.0i = 4.0 + 6.0i
-окт. 17, 2023 8:40:54 PM ComplexCalculator.ComplexCalculatorImpl multiply
+окт. 17, 2023 8:46:47 PM ComplexCalculator.ComplexCalculatorImpl multiply
 INFO: Multiplication: 3.0 + 4.0i * 1.0 + 2.0i = -5.0 + 10.0i
-окт. 17, 2023 8:40:54 PM ComplexCalculator.ComplexCalculatorImpl divide
+окт. 17, 2023 8:46:47 PM ComplexCalculator.ComplexCalculatorImpl divide
 INFO: Division: 3.0 + 4.0i / 1.0 + 2.0i = 2.2 + -0.4i
